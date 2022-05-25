@@ -1,13 +1,13 @@
 <?php
 /**
- * WP Bootstrap 4 functions and definitions
+ * WP Bootstrap 5 functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WP_Bootstrap_4
+ * @package WP_Bootstrap_5
  */
 
-if ( ! function_exists( 'wp_bootstrap_4_setup' ) ) :
+if ( ! function_exists( 'wp_bootstrap_5_setup' ) ) :
 	function wp_bootstrap_4_setup() {
 
 		// Make theme available for translation.
@@ -145,10 +145,10 @@ add_action( 'widgets_init', 'wp_bootstrap_4_widgets_init' );
  */
 function wp_bootstrap_4_scripts() {
 	wp_enqueue_style( 'open-iconic-bootstrap', get_template_directory_uri() . '/assets/css/open-iconic-bootstrap.css', array(), 'v4.0.0', 'all' );
-	wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v4.0.0', 'all' );
+	wp_enqueue_style( 'bootstrap-5', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v5.0.0', 'all' );
 	wp_enqueue_style( 'wp-bootstrap-4-style', get_stylesheet_uri(), array(), '1.0.2', 'all' );
 
-	wp_enqueue_script( 'bootstrap-4-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), 'v4.0.0', true );
+	wp_enqueue_script( 'bootstrap-5-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), 'v5.0.0', true );
 	wp_enqueue_script( 'wp-bootstrap-4-theme', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), '1.0.5', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
