@@ -56,7 +56,7 @@
 
 		<div class="container">
 			<div class="site-info">
-				<?php echo wp_kses_post( get_theme_mod( 'footer_text', '<a href="https://bootstrap-wp.com/">Bootstrap 4 WordPress Theme</a> <span class="sep"> | </span> Theme Name: WP Bootstrap 4.' ) ); ?>
+				<?php echo wp_kses_post( get_theme_mod( 'footer_text', '<a href="https://bootstrap-wp.com/">Wp-Bootstrap Theme</a> <span class="sep"> | </span> Theme Name: WP Bootstrap.' ) ); ?>
 			</div><!-- .site-info -->
 		</div>
 		<!-- /.container -->
