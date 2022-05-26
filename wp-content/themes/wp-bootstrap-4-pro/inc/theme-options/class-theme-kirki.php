@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * ensuring that all CSS & fonts still work.
  * It does not handle the customizer options, simply the frontend CSS.
  */
-class WP_Bootstrap_4_Kirki {
+class wp_bootstrap_5_Kirki {
 	/**
 	 * The config ID.
 	 *
@@ -349,4 +349,4 @@ class WP_Bootstrap_4_Kirki {
 		}
 	}
 }
-new WP_Bootstrap_4_Kirki();
+new wp_bootstrap_5_Kirki();

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-4' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-5' ); ?></a>
 
 	<header id="masthead" class="site-header <?php if ( get_theme_mod( 'sticky_header', 0 ) ) : echo 'sticky-top'; endif; ?>">
 		<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,7 +62,7 @@
 			            'fallback_cb'     => '__return_false',
 			            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			            'depth'           => 2,
-			            'walker'          => new WP_bootstrap_4_walker_nav_menu()
+			            'walker'          => new wp_bootstrap_5_walker_nav_menu()
 					) );
 				?>
 			<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?></div><!-- /.container --><?php endif; ?>

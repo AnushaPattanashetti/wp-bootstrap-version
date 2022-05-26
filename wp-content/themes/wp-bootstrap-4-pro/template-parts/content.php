@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 ?>
@@ -13,7 +13,7 @@
 	<div class="card-body">
 
 		<?php if ( is_sticky() ) : ?>
-			<span class="oi oi-bookmark wp-bp-sticky text-muted" title="<?php echo esc_attr__( 'Sticky Post', 'wp-bootstrap-4' ); ?>"></span>
+			<span class="oi oi-bookmark wp-bp-sticky text-muted" title="<?php echo esc_attr__( 'Sticky Post', 'wp-bootstrap-5' ); ?>"></span>
 		<?php endif; ?>
 
 		<?php if ( !is_singular() || !get_theme_mod( 'full_page_header', 1 ) ) : ?>
@@ -27,13 +27,13 @@
 
 				if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta text-muted">
-					<?php wp_bootstrap_4_posted_on(); ?>
+					<?php wp_bootstrap_5_posted_on(); ?>
 				</div><!-- .entry-meta -->
 				<?php
 				endif; ?>
 			</header><!-- .entry-header -->
 
-			<?php wp_bootstrap_4_post_thumbnail(); ?>
+			<?php wp_bootstrap_5_post_thumbnail(); ?>
 
 		<?php endif; ?>
 
@@ -43,7 +43,7 @@
 					the_content( sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wp-bootstrap-4' ),
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wp-bootstrap-5' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -54,7 +54,7 @@
 					) );
 
 					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-4' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-5' ),
 						'after'  => '</div>',
 					) );
 				?>
@@ -63,7 +63,7 @@
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 				<div class="">
-					<a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary btn-sm"><?php esc_html_e( 'Continue Reading', 'wp-bootstrap-4' ); ?> <small class="oi oi-chevron-right ml-1"></small></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary btn-sm"><?php esc_html_e( 'Continue Reading', 'wp-bootstrap-5' ); ?> <small class="oi oi-chevron-right ml-1"></small></a>
 				</div>
 			</div><!-- .entry-summary -->
 		<?php endif; ?>
@@ -73,7 +73,7 @@
 
 	<?php if ( 'post' === get_post_type() ) : ?>
 		<footer class="entry-footer card-footer text-muted">
-			<?php wp_bootstrap_4_entry_footer(); ?>
+			<?php wp_bootstrap_5_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 

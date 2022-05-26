@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 ?>
@@ -12,7 +12,7 @@
 <section class="no-results not-found card mt-3r">
 	<div class="card-body">
 		<header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wp-bootstrap-4' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wp-bootstrap-5' ); ?></h1>
 		</header><!-- .page-header -->
 
 		<div class="page-content">
@@ -23,7 +23,7 @@
 					printf(
 						wp_kses(
 							/* translators: 1: link to WP admin new post page. */
-							__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wp-bootstrap-4' ),
+							__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wp-bootstrap-5' ),
 							array(
 								'a' => array(
 									'href' => array(),
@@ -36,13 +36,13 @@
 
 			<?php elseif ( is_search() ) : ?>
 
-				<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp-bootstrap-4' ); ?></p>
+				<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wp-bootstrap-5' ); ?></p>
 				<?php
 					get_search_form();
 
 			else : ?>
 
-				<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp-bootstrap-4' ); ?></p>
+				<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp-bootstrap-5' ); ?></p>
 				<?php
 					get_search_form();
 

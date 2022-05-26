@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 ?>
@@ -17,7 +17,7 @@
 				<?php the_title( '<h1 class="entry-title h2">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
-			<?php wp_bootstrap_4_post_thumbnail(); ?>
+			<?php wp_bootstrap_5_post_thumbnail(); ?>
 		<?php endif; ?>
 
 		<div class="entry-content">
@@ -25,7 +25,7 @@
 				the_content();
 
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-4' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-5' ),
 					'after'  => '</div>',
 				) );
 			?>
@@ -40,7 +40,7 @@
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'wp-bootstrap-4' ),
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'wp-bootstrap-5' ),
 							array(
 								'span' => array(
 									'class' => array(),

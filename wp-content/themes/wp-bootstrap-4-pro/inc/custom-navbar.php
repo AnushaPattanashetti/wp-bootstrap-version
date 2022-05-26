@@ -1,6 +1,6 @@
 <?php
 
-class WP_bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
+class wp_bootstrap_5_walker_nav_menu extends Walker_Nav_menu {
 
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
         $object      = $item->object;

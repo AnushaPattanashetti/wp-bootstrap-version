@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 get_header(); ?>

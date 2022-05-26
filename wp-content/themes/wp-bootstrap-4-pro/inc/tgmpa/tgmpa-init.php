@@ -22,12 +22,12 @@
  */
 require_once get_template_directory() . '/inc/tgmpa/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'wp_bootstrap_4_register_required_plugins' );
+add_action( 'tgmpa_register', 'wp_bootstrap_5_register_required_plugins' );
 
 /**
  * Register the required plugins for this theme.
  */
-function wp_bootstrap_4_register_required_plugins() {
+function wp_bootstrap_5_register_required_plugins() {
 	$plugins = array(
 		array(
 			'name'      => 'Kirki',
@@ -39,7 +39,7 @@ function wp_bootstrap_4_register_required_plugins() {
 	 * Array of configuration settings. Amend each line as needed.
 	 */
 	$config = array(
-		'id'           => 'wp-bootstrap-4',
+		'id'           => 'wp-bootstrap-5',
 		'default_path' => '',
 		'menu'         => 'tgmpa-install-plugins',
 		'has_notices'  => true,

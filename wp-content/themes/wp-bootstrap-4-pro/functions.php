@@ -8,10 +8,10 @@
  */
 
 if ( ! function_exists( 'wp_bootstrap_5_setup' ) ) :
-	function wp_bootstrap_4_setup() {
+	function wp_bootstrap_5_setup() {
 
 		// Make theme available for translation.
-		load_theme_textdomain( 'wp-bootstrap-4', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'wp-bootstrap-5', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -30,7 +30,7 @@ if ( ! function_exists( 'wp_bootstrap_5_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'wp-bootstrap-4' ),
+			'menu-1' => esc_html__( 'Primary', 'wp-bootstrap-5' ),
 		) );
 
 		// Switch default core markup for search form, comment form, and comments
@@ -42,7 +42,7 @@ if ( ! function_exists( 'wp_bootstrap_5_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'wp_bootstrap_4_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'wp_bootstrap_5_custom_background_args', array(
 			'default-color' => 'f8f9fa',
 			'default-image' => '',
 		) ) );
@@ -59,7 +59,7 @@ if ( ! function_exists( 'wp_bootstrap_5_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'wp_bootstrap_4_setup' );
+add_action( 'after_setup_theme', 'wp_bootstrap_5_setup' );
 
 
 
@@ -71,10 +71,10 @@ add_action( 'after_setup_theme', 'wp_bootstrap_4_setup' );
  *
  * @global int $content_width
  */
-function wp_bootstrap_4_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'wp_bootstrap_4_content_width', 800 );
+function wp_bootstrap_5_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'wp_bootstrap_5_content_width', 800 );
 }
-add_action( 'after_setup_theme', 'wp_bootstrap_4_content_width', 0 );
+add_action( 'after_setup_theme', 'wp_bootstrap_5_content_width', 0 );
 
 
 
@@ -84,11 +84,11 @@ add_action( 'after_setup_theme', 'wp_bootstrap_4_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function wp_bootstrap_4_widgets_init() {
+function wp_bootstrap_5_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'wp-bootstrap-4' ),
+		'name'          => esc_html__( 'Sidebar', 'wp-bootstrap-5' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-4' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-5' ),
 		'before_widget' => '<section id="%1$s" class="widget border-bottom %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title h6">',
@@ -96,9 +96,9 @@ function wp_bootstrap_4_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 1', 'wp-bootstrap-4' ),
+		'name'          => esc_html__( 'Footer Column 1', 'wp-bootstrap-5' ),
 		'id'            => 'footer-1',
-		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-4' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-5' ),
 		'before_widget' => '<section id="%1$s" class="widget wp-bp-footer-widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title h6">',
@@ -106,9 +106,9 @@ function wp_bootstrap_4_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 2', 'wp-bootstrap-4' ),
+		'name'          => esc_html__( 'Footer Column 2', 'wp-bootstrap-5' ),
 		'id'            => 'footer-2',
-		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-4' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-5' ),
 		'before_widget' => '<section id="%1$s" class="widget wp-bp-footer-widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title h6">',
@@ -116,9 +116,9 @@ function wp_bootstrap_4_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 3', 'wp-bootstrap-4' ),
+		'name'          => esc_html__( 'Footer Column 3', 'wp-bootstrap-5' ),
 		'id'            => 'footer-3',
-		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-4' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-5' ),
 		'before_widget' => '<section id="%1$s" class="widget wp-bp-footer-widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title h6">',
@@ -126,16 +126,16 @@ function wp_bootstrap_4_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Column 4', 'wp-bootstrap-4' ),
+		'name'          => esc_html__( 'Footer Column 4', 'wp-bootstrap-5' ),
 		'id'            => 'footer-4',
-		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-4' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-5' ),
 		'before_widget' => '<section id="%1$s" class="widget wp-bp-footer-widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h5 class="widget-title h6">',
 		'after_title'   => '</h5>',
 	) );
 }
-add_action( 'widgets_init', 'wp_bootstrap_4_widgets_init' );
+add_action( 'widgets_init', 'wp_bootstrap_5_widgets_init' );
 
 
 
@@ -143,28 +143,28 @@ add_action( 'widgets_init', 'wp_bootstrap_4_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function wp_bootstrap_4_scripts() {
-	wp_enqueue_style( 'open-iconic-bootstrap', get_template_directory_uri() . '/assets/css/open-iconic-bootstrap.css', array(), 'v4.0.0', 'all' );
+function wp_bootstrap_5_scripts() {
+	wp_enqueue_style( 'open-iconic-bootstrap', get_template_directory_uri() . '/assets/css/open-iconic-bootstrap.css', array(), 'v5.0.0', 'all' );
 	wp_enqueue_style( 'bootstrap-5', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v5.0.0', 'all' );
-	wp_enqueue_style( 'wp-bootstrap-4-style', get_stylesheet_uri(), array(), '1.0.2', 'all' );
+	wp_enqueue_style( 'wp-bootstrap-5-style', get_stylesheet_uri(), array(), '1.0.2', 'all' );
     wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/css/custom.css', array(), 'v1.0.0', 'all' );
 	wp_enqueue_script( 'bootstrap-5-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), 'v5.0.0', true );
-	wp_enqueue_script( 'wp-bootstrap-4-theme', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), '1.0.5', true );
+	wp_enqueue_script( 'wp-bootstrap-5-theme', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), '1.0.5', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'wp_bootstrap_4_scripts' );
+add_action( 'wp_enqueue_scripts', 'wp_bootstrap_5_scripts' );
 
 
 /**
  * Registers an editor stylesheet for the theme.
  */
-function wp_bootstrap_4_add_editor_styles() {
+function wp_bootstrap_5_add_editor_styles() {
     add_editor_style( 'editor-style.css' );
 }
-add_action( 'admin_init', 'wp_bootstrap_4_add_editor_styles' );
+add_action( 'admin_init', 'wp_bootstrap_5_add_editor_styles' );
 
 
 // Implement the Custom Header feature.
@@ -205,7 +205,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 // Change Theme Update Server
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://s3.ap-south-1.amazonaws.com/wp-bootstrap-4/theme.json',
+	'https://s3.ap-south-1.amazonaws.com/wp-bootstrap-5/theme.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
-	'wp-bootstrap-4-pro'
+	'wp-bootstrap-5-pro'
 );

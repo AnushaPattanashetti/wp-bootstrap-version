@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 get_header(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 						<header class="page-header mt-3r">
 							<h1 class="page-title"><?php
 								/* translators: %s: search query. */
-								printf( esc_html__( 'Search Results for: %s', 'wp-bootstrap-4' ), '<span>' . get_search_query() . '</span>' );
+								printf( esc_html__( 'Search Results for: %s', 'wp-bootstrap-5' ), '<span>' . get_search_query() . '</span>' );
 							?></h1>
 						</header><!-- .page-header -->
 
@@ -49,8 +49,8 @@ get_header(); ?>
 						endwhile;
 
 						the_posts_navigation( array(
-							'next_text'         => esc_html__( 'Newer Posts', 'wp-bootstrap-4' ),
-							'prev_text'         => esc_html__( 'Older Posts', 'wp-bootstrap-4' ),
+							'next_text'         => esc_html__( 'Newer Posts', 'wp-bootstrap-5' ),
+							'prev_text'         => esc_html__( 'Older Posts', 'wp-bootstrap-5' ),
 						) );
 
 					else :

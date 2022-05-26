@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package WP_Bootstrap_4
+ * @package WP_Bootstrap_5
  */
 
 get_header(); ?>
@@ -29,11 +29,11 @@ get_header(); ?>
 							<div class="card-body">
 								<section class="error-404 not-found">
 									<header class="page-header">
-										<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'wp-bootstrap-4' ); ?></h1>
+										<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'wp-bootstrap-5' ); ?></h1>
 									</header><!-- .page-header -->
 
 									<div class="page-content">
-										<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wp-bootstrap-4' ); ?></p>
+										<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wp-bootstrap-5' ); ?></p>
 
 										<?php
 											get_search_form();
@@ -45,7 +45,7 @@ get_header(); ?>
 										?>
 
 										<div class="widget widget_categories">
-											<h5 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'wp-bootstrap-4' ); ?></h5>
+											<h5 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'wp-bootstrap-5' ); ?></h5>
 											<ul>
 											<?php
 												wp_list_categories( array(

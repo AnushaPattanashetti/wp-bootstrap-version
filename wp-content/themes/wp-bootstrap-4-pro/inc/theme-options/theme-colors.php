@@ -1,16 +1,16 @@
 <?php
 
 if( class_exists( 'Kirki' ) ) {
-    function wp_bootstrap_4_colors_section( $wp_customize ) {
-        $wp_customize->get_control( 'background_color' )->label = esc_html__( 'Body Background Color', 'wp-bootstrap-4' );
-        $wp_customize->get_section( 'colors' )->title = esc_html__( 'Theme Colors', 'wp-bootstrap-4' );
+    function wp_bootstrap_5_colors_section( $wp_customize ) {
+        $wp_customize->get_control( 'background_color' )->label = esc_html__( 'Body Background Color', 'wp-bootstrap-5' );
+        $wp_customize->get_section( 'colors' )->title = esc_html__( 'Theme Colors', 'wp-bootstrap-5' );
     }
-    add_action( 'customize_register', 'wp_bootstrap_4_colors_section' );
+    add_action( 'customize_register', 'wp_bootstrap_5_colors_section' );
 }
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'styling_header_bg_color',
-	'label'    => esc_html__( 'Header Background Color', 'wp-bootstrap-4' ),
+	'label'    => esc_html__( 'Header Background Color', 'wp-bootstrap-5' ),
 	'section'  => 'colors',
 	'type'     => 'color',
     'default'  => '#343a40',
@@ -28,11 +28,11 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
     ),
 ) );
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'styling_primary_color',
 	'section'  => 'colors',
 	'type'     => 'color',
-    'label' => esc_html__( 'Links & Buttons Color', 'wp-bootstrap-4' ),
+    'label' => esc_html__( 'Links & Buttons Color', 'wp-bootstrap-5' ),
     'default'  => '#007bff',
     'output'   => array(
         array(
@@ -76,9 +76,9 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
     ),
 ) );
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'styling_primary_hover_color',
-	'label'    => esc_html__( 'Links & Buttons Hover Color', 'wp-bootstrap-4' ),
+	'label'    => esc_html__( 'Links & Buttons Hover Color', 'wp-bootstrap-5' ),
 	'section'  => 'colors',
 	'type'     => 'color',
     'default'  => '#0069d9',
@@ -109,9 +109,9 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
 ) );
 
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'styling_footer_bg_color',
-	'label'    => esc_html__( 'Footer Background Color', 'wp-bootstrap-4' ),
+	'label'    => esc_html__( 'Footer Background Color', 'wp-bootstrap-5' ),
 	'section'  => 'colors',
 	'type'     => 'color',
     'default'  => '#ffffff',
@@ -124,9 +124,9 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
     ),
 ) );
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'styling_footer_text_color',
-	'label'    => esc_html__( 'Footer Text Color', 'wp-bootstrap-4' ),
+	'label'    => esc_html__( 'Footer Text Color', 'wp-bootstrap-5' ),
 	'section'  => 'colors',
 	'type'     => 'color',
     'default'  => '#6c757d',
@@ -139,9 +139,9 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
     ),
 ) );
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'styling_footer_link_color',
-	'label'    => esc_html__( 'Footer Link Color', 'wp-bootstrap-4' ),
+	'label'    => esc_html__( 'Footer Link Color', 'wp-bootstrap-5' ),
 	'section'  => 'colors',
 	'type'     => 'color',
     'default'  => '#007bff',

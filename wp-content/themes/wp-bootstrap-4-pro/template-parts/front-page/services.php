@@ -21,9 +21,9 @@ $featured_page_3 = get_post( $featured_page_3_id );
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo esc_html( $featured_page_1->post_title ); ?></h5>
                                 <p class="card-text">
-                                    <?php echo esc_html( wp_bootstrap_4_get_short_excerpt( 20, $featured_page_1 ) ); ?>
+                                    <?php echo esc_html( wp_bootstrap_5_get_short_excerpt( 20, $featured_page_1 ) ); ?>
                                 </p>
-                                <a href="<?php echo esc_url( get_post_permalink( $featured_page_1 ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Read More', 'wp-bootstrap-4' ); ?></a>
+                                <a href="<?php echo esc_url( get_post_permalink( $featured_page_1 ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Read More', 'wp-bootstrap-5' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -36,9 +36,9 @@ $featured_page_3 = get_post( $featured_page_3_id );
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo esc_html( $featured_page_2->post_title ); ?></h5>
                                 <p class="card-text">
-                                    <?php echo esc_html( wp_bootstrap_4_get_short_excerpt( 20, $featured_page_2 ) ); ?>
+                                    <?php echo esc_html( wp_bootstrap_5_get_short_excerpt( 20, $featured_page_2 ) ); ?>
                                 </p>
-                                <a href="<?php echo esc_url( get_post_permalink( $featured_page_2 ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Read More', 'wp-bootstrap-4' ); ?></a>
+                                <a href="<?php echo esc_url( get_post_permalink( $featured_page_2 ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Read More', 'wp-bootstrap-5' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -51,9 +51,9 @@ $featured_page_3 = get_post( $featured_page_3_id );
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo esc_html( $featured_page_3->post_title ); ?></h5>
                                 <p class="card-text">
-                                    <?php echo esc_html( wp_bootstrap_4_get_short_excerpt( 20, $featured_page_3 ) ); ?>
+                                    <?php echo esc_html( wp_bootstrap_5_get_short_excerpt( 20, $featured_page_3 ) ); ?>
                                 </p>
-                                <a href="<?php echo esc_url( get_post_permalink( $featured_page_3 ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Read More', 'wp-bootstrap-4' ); ?></a>
+                                <a href="<?php echo esc_url( get_post_permalink( $featured_page_3 ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Read More', 'wp-bootstrap-5' ); ?></a>
                             </div>
                         </div>
                     </div>

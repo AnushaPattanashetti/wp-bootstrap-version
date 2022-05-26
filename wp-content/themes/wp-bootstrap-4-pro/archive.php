@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 get_header(); ?>
@@ -49,8 +49,8 @@ get_header(); ?>
 						endwhile;
 
 						the_posts_navigation( array(
-							'next_text' => esc_html__( 'Newer Posts', 'wp-bootstrap-4' ),
-							'prev_text' => esc_html__( 'Older Posts', 'wp-bootstrap-4' ),
+							'next_text' => esc_html__( 'Newer Posts', 'wp-bootstrap-5' ),
+							'prev_text' => esc_html__( 'Older Posts', 'wp-bootstrap-5' ),
 						) );
 
 					else :

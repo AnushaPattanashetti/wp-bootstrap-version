@@ -1,17 +1,17 @@
 <?php
 
-WP_Bootstrap_4_Kirki::add_section( 'wp_bp_typography', array(
-    'title'          => esc_html__( 'Typography', 'wp-bootstrap-4' ),
+wp_bootstrap_5_Kirki::add_section( 'wp_bp_typography', array(
+    'title'          => esc_html__( 'Typography', 'wp-bootstrap-5' ),
     'panel'          => 'theme_options',
     'capability'     => 'edit_theme_options',
     'theme_supports' => '',
 ) );
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'wp_bp_body_typo',
 	'section'  => 'wp_bp_typography',
 	'type'     => 'typography',
-    'label' => esc_html__( 'Body Typography', 'wp-bootstrap-4' ),
+    'label' => esc_html__( 'Body Typography', 'wp-bootstrap-5' ),
     'default'     => array(
 		'font-family'    => "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 		'variant'        => '',
@@ -25,11 +25,11 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
 	),
 ) );
 
-WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
+wp_bootstrap_5_Kirki::add_field( 'wp_bootstrap_5_theme', array(
 	'settings' => 'wp_bp_heading_typo',
 	'section'  => 'wp_bp_typography',
 	'type'     => 'typography',
-    'label' => esc_html__( 'Heading Typography', 'wp-bootstrap-4' ),
+    'label' => esc_html__( 'Heading Typography', 'wp-bootstrap-5' ),
     'default'     => array(
 		'font-family'    => "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 		'variant'        => '500',

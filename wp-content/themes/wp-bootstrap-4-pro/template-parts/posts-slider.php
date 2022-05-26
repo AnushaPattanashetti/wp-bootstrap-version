@@ -42,8 +42,8 @@ $featured_query = new WP_Query( $args );
                     <div class="carousel-caption d-none d-md-flex align-items-end">
                         <div class="w-100 text-center mb-4">
                             <h5><?php the_title(); ?></h5>
-                            <p><?php echo esc_html( wp_bootstrap_4_get_short_excerpt( 20 ) ); ?></p>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary btn-sm"><?php esc_html_e( 'Continue Reading', 'wp-bootstrap-4' ); ?> <small class="oi oi-chevron-right ml-1"></small></a>
+                            <p><?php echo esc_html( wp_bootstrap_5_get_short_excerpt( 20 ) ); ?></p>
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary btn-sm"><?php esc_html_e( 'Continue Reading', 'wp-bootstrap-5' ); ?> <small class="oi oi-chevron-right ml-1"></small></a>
                         </div>
                     </div>
                 </div>
@@ -52,11 +52,11 @@ $featured_query = new WP_Query( $args );
         </div>
         <a class="carousel-control-prev" href="#wp-bp-posts-slider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"><?php esc_html_e( 'Previous', 'wp-bootstrap-4' ); ?></span>
+            <span class="sr-only"><?php esc_html_e( 'Previous', 'wp-bootstrap-5' ); ?></span>
         </a>
         <a class="carousel-control-next" href="#wp-bp-posts-slider" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"><?php esc_html_e( 'Next', 'wp-bootstrap-4' ); ?></span>
+            <span class="sr-only"><?php esc_html_e( 'Next', 'wp-bootstrap-5' ); ?></span>
         </a>
     </div>
 <?php endif; ?>

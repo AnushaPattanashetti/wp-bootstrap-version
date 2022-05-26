@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function wp_bootstrap_4_body_classes( $classes ) {
+function wp_bootstrap_5_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -31,33 +31,33 @@ function wp_bootstrap_4_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'wp_bootstrap_4_body_classes' );
+add_filter( 'body_class', 'wp_bootstrap_5_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function wp_bootstrap_4_pingback_header() {
+function wp_bootstrap_5_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'wp_bootstrap_4_pingback_header' );
+add_action( 'wp_head', 'wp_bootstrap_5_pingback_header' );
 
 
 
 /**
 * Add classes to navigation buttons
 */
-add_filter( 'next_posts_link_attributes', 'wp_bootstrap_4_posts_link_attributes' );
-add_filter( 'previous_posts_link_attributes', 'wp_bootstrap_4_posts_link_attributes' );
-add_filter( 'next_comments_link_attributes', 'wp_bootstrap_4_comments_link_attributes' );
-add_filter( 'previous_comments_link_attributes', 'wp_bootstrap_4_comments_link_attributes' );
+add_filter( 'next_posts_link_attributes', 'wp_bootstrap_5_posts_link_attributes' );
+add_filter( 'previous_posts_link_attributes', 'wp_bootstrap_5_posts_link_attributes' );
+add_filter( 'next_comments_link_attributes', 'wp_bootstrap_5_comments_link_attributes' );
+add_filter( 'previous_comments_link_attributes', 'wp_bootstrap_5_comments_link_attributes' );
 
-function wp_bootstrap_4_posts_link_attributes() {
+function wp_bootstrap_5_posts_link_attributes() {
     return 'class="btn btn-outline-primary mb-4"';
 }
 
-function wp_bootstrap_4_comments_link_attributes() {
+function wp_bootstrap_5_comments_link_attributes() {
     return 'class="btn btn-outline-primary mb-4"';
 }
 
@@ -66,7 +66,7 @@ function wp_bootstrap_4_comments_link_attributes() {
 /**
 * Return shorter excerpt
 */
-function wp_bootstrap_4_get_short_excerpt( $length = 40, $post_obj = null ) {
+function wp_bootstrap_5_get_short_excerpt( $length = 40, $post_obj = null ) {
 	global $post;
 	if ( is_null( $post_obj ) ) {
 		$post_obj = $post;

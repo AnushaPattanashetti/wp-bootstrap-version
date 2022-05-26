@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package WP_Bootstrap_4
+ * @package wp_bootstrap_5
  */
 
 get_header(); ?>
@@ -30,7 +30,7 @@ get_header(); ?>
 						<h1><?php echo $full_page_title; ?></h1>
 						<?php if ( 'post' === get_post_type() ) : ?>
 							<div class="entry-meta">
-								<?php wp_bootstrap_4_posted_on(); ?>
+								<?php wp_bootstrap_5_posted_on(); ?>
 							</div><!-- .entry-meta -->
 						<?php endif; ?>
 					</div>
@@ -58,8 +58,8 @@ get_header(); ?>
 						get_template_part( 'template-parts/content', get_post_type() );
 
 						the_post_navigation(array(
-				            'prev_text' => esc_html__( '&laquo; Previous Post', 'wp-bootstrap-4' ),
-				            'next_text' => esc_html__( 'Next Post &raquo;', 'wp-bootstrap-4' ),
+				            'prev_text' => esc_html__( '&laquo; Previous Post', 'wp-bootstrap-5' ),
+				            'next_text' => esc_html__( 'Next Post &raquo;', 'wp-bootstrap-5' ),
 				        ) );
 
 						// If comments are open or we have at least one comment, load up the comment template.
