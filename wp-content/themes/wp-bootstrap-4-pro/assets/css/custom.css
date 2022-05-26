@@ -1,0 +1,17 @@
+body{
+
+    font-family:sans-serif;
+
+}
+
+h5.widget-title.h6 {
+    text-align: left;
+}
+
+.sidebar-1-area .widget ul li, 
+.footer-widgets .widget ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style: square;
+    text-align: left;
+}

@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Left Sidebar
+* Template Name: Left Sidebar bootstrap-5
 */
 
 get_header(); ?>
